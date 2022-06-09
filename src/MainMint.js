@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ethers, BigNumber } from 'ethers';
 import frugs from './Frugs.json';
 import React from 'react';
-import { Box, Button, Flex, Image, Input, Link, Spacer, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Image, Input, Text } from '@chakra-ui/react';
 import FrugsLogo from "./assets/social-media-icons/pixelfruglogo150.png";
 
 const frugsAddress = "0x720DfB9F3dE60ebdAb0daA8bE9F4943C29E5216f";
