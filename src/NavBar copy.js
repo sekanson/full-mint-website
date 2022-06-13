@@ -21,19 +21,24 @@ const NavBar = ({ accounts, setAccounts }) => {
             {/* Left side - Social media icons */}
             <Flex justify="space-around" width="40%" padding="0 75px">
                 <Link href="https://www.instagram.com/frugs.io">
-                    <Image src={Instagram} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 25px" />
+                    <Image src={Instagram} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 15px" />
                 </Link>
                 <Link href="https://www.twitter.com/frugsnft">
-                    <Image src={Twitter} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 25px" />
+                    <Image src={Twitter} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 15px" />
                 </Link>
                 <Link href="https://discord.gg/Rq4zS3GM">
-                    <Image src={Email} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 25px" />
+                    <Image src={Email} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 15px" />
                 </Link>
             </Flex>
 
             {/* Right side - Sections and connect */}
             <Flex justify="space-around" align="center" width="40%" padding="30px" textShadow="0 2px 2px #000000">
-
+                <Box margin="0 15px">About</Box>
+                <Spacer />
+                <Box margin="0 15px">Mint</Box>
+                <Spacer />
+                <Box margin="0 15px">Team</Box>
+                <Spacer />
                
                 {/* Connect */}
                 {isConnected ? (
@@ -42,14 +47,15 @@ const NavBar = ({ accounts, setAccounts }) => {
                     <Button
                         backgroundColor="#3DE200"
                         borderRadius="5px"
-                        boxShadow="0px 5px 5px 1px #0F0F0F"
+                        boxShadow="0px 2px 2px 1px #0F0F0F"
                         color="white"
                         cursor="pointer"
                         fontFamily="inherit"
                         padding="15px" 
                         margin="0 15px"
+                        onClick={connectAccount}
                     >
-                        Ruggit...
+                        Connect
                     </Button>
                 )}
             </Flex>

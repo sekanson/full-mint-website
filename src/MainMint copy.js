@@ -45,7 +45,7 @@ const MainMint = ({ accounts, setAccounts }) => {
         <Flex justify="center" align="center" height="80vh" paddingBottom="100px">
             <Box width="520px">
                 <div>  
-                    <Image src={FrugsLogo} ></Image>
+                    <Image src={FrugsLogo}></Image>
                         <Text
                             fontSize="30px"
                             letterSpacing="-5.5%"
@@ -105,7 +105,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                                     fontFamily="inherit"
                                     padding="15px" 
                                     marginTop="10px"
-                                    // missing the button handle option here.
+                                    onClick={handleMint}
                                     >
                                 MINT NOW
                             </Button>
@@ -116,10 +116,10 @@ const MainMint = ({ accounts, setAccounts }) => {
                         fontSize="30px"
                         letterSpacing="-5.5%"
                         fontFamily="VT323"
-                        color="#3DE200"
                         textShadow="0 5px 5px #000000"
+                        color="#3DE200"
                     >
-                        Frug army growing. Ruggit. Mint soon.
+                        You must connect to Mint
                     </Text>
                 )}
             </Box>
