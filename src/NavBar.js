@@ -33,7 +33,22 @@ const NavBar = ({ accounts, setAccounts }) => {
 
             {/* Right side - Sections and connect */}
             <Flex justify="space-around" align="center" width="40%" padding="30px" textShadow="0 2px 2px #000000">
-
+                <Box margin="0 15px"></Box>
+                <Spacer />
+                <Box margin="0 15px"></Box>
+                <Spacer />
+                <Button
+                        backgroundColor="#3DE200"
+                        borderRadius="5px"
+                        boxShadow="0px 5px 5px 1px #0F0F0F"
+                        color="white"
+                        cursor="pointer"
+                        fontFamily="inherit"
+                        padding="15px" 
+                        margin="0 15px"
+                    >
+                        <a href="Frug.html" margin="0 15px">FrugGame</a>
+                    </Button>
                
                 {/* Connect */}
                 {isConnected ? (
@@ -49,7 +64,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                         padding="15px" 
                         margin="0 15px"
                     >
-                        Ruggit...
+                        Connect
                     </Button>
                 )}
             </Flex>
