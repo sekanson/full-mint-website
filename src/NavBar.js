@@ -15,6 +15,21 @@ const NavBar = ({ accounts, setAccounts }) => {
             setAccounts(accounts);
         }
     }
+    async function changeNetwork(){
+        await window.ethereum.request({ method: 'wallet_addEthereumChain',
+           params:[
+              {chainId: "0x89",
+              chainName: "Matic Mainnet",
+              nativeCurrency: {
+                 name: "MATIC",
+                 symbol: "MATIC",
+                 decimals: 18
+              },
+              rpcUrls: ["https://rpc-mainnet.matic.network/"],
+              blockExplorerUrls: ["https://polygonscan.com/"]
+            }
+           ]});
+        }
 
     return (
         <Flex justify="space-between" align="center" padding="30px">
@@ -49,7 +64,24 @@ const NavBar = ({ accounts, setAccounts }) => {
                     >
                         <a href="Frug.html" margin="0 15px">FrugGame</a>
                     </Button>
-               
+
+                       {/* Polygon */}
+                       {(
+                    <Button
+                        backgroundColor="#323232"
+                        borderRadius="5px"
+                        boxShadow="0px 5px 5px 1px #0F0F0F"
+                        color="white"
+                        cursor="pointer"
+                        fontFamily="inherit"
+                        padding="15px" 
+                        margin="0 15px"
+                        onClick={changeNetwork}
+                    >
+                        Add Polygon
+                    </Button>
+                )}
+                  
                 {/* Connect */}
                 {isConnected ? (
                     <Box margin="0 15px">Connected</Box>
@@ -63,10 +95,12 @@ const NavBar = ({ accounts, setAccounts }) => {
                         fontFamily="inherit"
                         padding="15px" 
                         margin="0 15px"
+                        onClick={connectAccount}
                     >
                         Connect
                     </Button>
                 )}
+
             </Flex>
         </Flex>
     );

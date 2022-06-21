@@ -105,7 +105,7 @@ const MainMint = ({ accounts, setAccounts }) => {
                                     fontFamily="inherit"
                                     padding="15px" 
                                     marginTop="10px"
-                                    // missing the button handle option here.
+                                    onClick={handleMint}
                                     >
                                 MINT NOW
                             </Button>
