@@ -95,9 +95,9 @@ const NavBar = ({ accounts, setAccounts }) => {
                         fontFamily="inherit"
                         padding="15px" 
                         margin="0 15px"
-                        onClick={connectAccount}
+                        onClick={ *connectAccount* }
                     >
-                        Connect
+                        Connect Soon
                     </Button>
                 )}
 
