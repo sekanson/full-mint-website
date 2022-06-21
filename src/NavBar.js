@@ -62,7 +62,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                         padding="15px" 
                         margin="0 15px"
                     >
-                        <a href="Frug.html" margin="0 15px">FrugGame</a>
+                        <a href="Frug.html" margin="0 15px" style={{textDecoration: "none", color: "#FFFFFF"}}>FrugGame</a>
                     </Button>
 
                        {/* Polygon */}
