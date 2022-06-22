@@ -41,7 +41,7 @@ const NavBar = ({ accounts, setAccounts }) => {
                 <Link href="https://www.twitter.com/frugsnft">
                     <Image src={Twitter} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 25px" />
                 </Link>
-                <Link href="https://discord.gg/Rq4zS3GM">
+                <Link href="https://discord.gg/uuCXMSjyYZ">
                     <Image src={Email} boxSize="42px" boxShadow="0 5px 5px #000000" margin="0 25px" />
                 </Link>
             </Flex>
